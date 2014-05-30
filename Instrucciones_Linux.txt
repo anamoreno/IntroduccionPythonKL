@@ -1,3 +1,7 @@
+Guía Básica de instalación de Ubuntu 14.04 
+Por: Alejandro Cárdenas-Avendaño, Konrad Lorenz Fundación Universitaria.
+alejandro.cardenasa@konradlorenz.edu.co
+
 1. Descargar Ubuntu http://www.ubuntu.com/download (Aproximadamente 1GB)
 
 2. Crear una unidad "Booteable" o ¿inicializable? 
@@ -65,5 +69,30 @@ http://www.ubuntu.com/download/desktop/create-a-usb-stick-on-mac-osx
 	el computador, así que se necesitaría instalar TODO nuevamente. De manera análoga, puede que no le guste Ubuntu 
 	(si es el caso me gustaría saber porqué alejandro.cardenasa@konradlorenz.edu.co) y haya asignado espacio que 
 	requiera para otro sistema operativo. La nueva asignación de espacio puede tardar varios minutos. 
-	4.8 
+	4.8 Seleccionar la ubicación geográfica
+	4.9 Seleccionar la distribución del teclado. Acá es importante reconocer realmente qué teclado tiene, para que después
+	no sea muy terrible buscar caracteres como ^,*,[,],ñ,¬,\, etc... La opción "Detectar teclado" es bastante divertida
+	y sirve, en primera aproximación, para seleccionar adecuadamente el teclado correcto. 
+	4.10 Crear un nombre para el equipo. Recomiendo utilizar algo decente, ya que se usará todo el tiempo en las líneas
+	de comando. No muy largo, no muy corto... 
+	4.11 La instalación puede tardar varios minutos. Mientras tanto puede leer la guia GitHub para Dummies. 
+	4.12 Una vez la instalación haya terminado correctamente, reinicie el computador. Dependiendo de la opción escogida en 
+	4.6 el inicio del computador será: Entrar directamente a Ubuntu o desplegará una lista para escoger el sistema operativo
+	a utilizar. 
+	4.13 Dependiendo la configuración del computador debe retirar la USB apagado o durante el reinicio. Para que no vuelva a
+	iniciar desde la USB.
+	
+	Nota: Si por alguna razón, pueden haber muchas, la instalación no funciona. Sugiero dos cosas: a) Busque el error que ocurra 
+	en la web, me sorprendería que no hubiera información. b) Escríbame un correo con los detalles del suceso, agregando la 
+	descripción del computador, marca, sistema operativo ya instalado, tipo de instalación escogida, etc. 
+	
+5. Si está dentro del 20% de la población (la estadística es mia) que instala Ubuntu por primera vez y le funciona: Felicitaciones.
+No sé porqué pero casi siempre pasa algo, bien sea por la arquitectura del computador, la versión, un problema de compatibilidad, etc. 
+Puede pasar que, si instaló Ubuntu quitándole espacio al otro sistema operativo ya existente, cuando intente iniciar otro sistema operativo
+tarde más de lo normal y deba hacer unas verificaciones de disco primero, es normal. En este caso, cada vez que prenda el computador debe escoger
+el sistema operativo a usar. 
+
+
+		
+	
 	
