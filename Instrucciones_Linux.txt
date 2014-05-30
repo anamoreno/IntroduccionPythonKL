@@ -92,7 +92,15 @@ Puede pasar que, si instaló Ubuntu quitándole espacio al otro sistema operativ
 tarde más de lo normal y deba hacer unas verificaciones de disco primero, es normal. En este caso, cada vez que prenda el computador debe escoger
 el sistema operativo a usar. 
 
+Consideraciones Generales:
 
+ Existe por lo menos otra manera de instalar un sistema operativo de manera virtual. Lo que se hace es utilizar un software que virtualiza arquitecturas 
+ para instalar un sistema operativo sobre otro, conocido como el anfitrión. En nuestro caso sirve en ambas vías; se puede virtualizar Ubuntu sobre Windows
+ y se puede virtualizar Windows sobre Ubuntu. Aconsejo realizar este tipo de instalación para casos muy específicos y cuando el sistema operativo virtualizado
+ se use realmente poco. Por ejemplo: Yo virtualizaba Windows desde Ubuntu para instalar juegos,utilizar SPSS (cuando no estaba para otras plataformas (ahora SPSS corre Python nativamente))
+ y los Software de JOVE y Celestron. Realmente no es aconsejable en general, ya que si no se tiene un súper computador ambos sistemas operativos funcionarán lentamente, 
+ consumiendo cada uno bastantes recursos de máquina.
+ Hasta donde sé VirtualBox funciona bastante bien y es Software Libre. (https://www.virtualbox.org) 
 		
 	
 	
