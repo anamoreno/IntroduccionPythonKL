@@ -1,0 +1,69 @@
+1. Descargar Ubuntu http://www.ubuntu.com/download (Aproximadamente 1GB)
+
+2. Crear una unidad "Booteable" o ¿inicializable? 
+
+Windows
+
+Instrucciones en:
+http://www.ubuntu.com/download/desktop/create-a-usb-stick-on-windows
+Se requiere:
+http://www.pendrivelinux.com/universal-usb-installer-easy-as-1-2-3/
+2.1 Descargar el Software (USB Installer) y seguir las instrucciones:
+	2.1.1 Seleccionar la Versión de Linux (Ubuntu)
+	2.2.2 Ubicar el archivo .iso que se descargó en (1)
+	2.2.3 Seleccionar la USB
+	2.2.4 Sugiero formatearla
+	2.2.5 Click en Create
+	2.2.6 Cerrar la aplicación 
+2.2 Apagar el equipo
+	
+	
+Mac (Si usted tiene MAC no necesita instalar Linux, estas líneas las escribo por completes. 	
+Quizá en algún momento requiera crear una unidad "Booteable")
+
+Instrucciones en:
+http://www.ubuntu.com/download/desktop/create-a-usb-stick-on-mac-osx
+2.1 Abrir un Terminar
+2.2 Convertir el .iso en .img
+	2.2.1 hdiutil convert -format UDRW -o /Users/USUARIO/Desktop/ubuntu.img /Users/USUARIO/Desktop/ubuntu-14.04-desktop-amd64.iso
+	2.2.2 Mac agrega una extensión .dmg al archivo. Desde el Finder se debe borrar.  
+2.3 Insertar la USB
+2.4 Ejecutar la Utilidad de Discos
+	2.4.1 Desmontar la Unidad
+	VARIANTE:
+	2.4.2 Desde la terminal correr el código diskutil unmountDisk /Volumes/DATA
+2.5 Ejecutar sudo dd if=/Users/USUARIO/Desktop/ubuntu.img of=/Volumes/rNOMBREDELAUSB bs=1m
+2.6 Desde la Utilidad de Discos Expulsar la Unidad
+2.7 Apagar el equipo
+
+3. Prender el equipo y arrancar desde la USB
+	Siempre que un computador está prendiendo, durante los primeros segundos, aparecen mensajes propios de la máquina	
+	que indican cómo entrar al BIOS, es decir la tecla indicada. Puede ser un Esc, Tab, F8, F12... Por ejemplo:
+	
+	- MacBook: Dejar presionada la tecla alt/option
+	- Dell: Presionar varias veces la tecla F12
+	- HP: Presionar varias veces la tecla F8
+
+4. Instalar Ubuntu
+
+	Instrucciones:
+	http://www.ubuntu.com/download/desktop/install-ubuntu-desktop
+
+	4.1 Seleccionar el Idioma
+	4.2 Instalar Ubuntu
+	4.3 Cumplir tres requisitos básicos:
+		- Estar conectado a Internet. 
+		- Si es un portátil, estar conectado a una toma de corriente.
+		- Tener al menos 6.4 GB de espacio libre en Disco Duro. (Realmente recomiendo dejarla a Ubuntu más de 100GB)
+	4.4 Sugiero Descargar las actualizaciones mientras se instala
+	4.5 Sugiero Instalar el software de terceros. 
+	4.6 Usted puede escoger si desea instalar Ubuntu junto a Microsoft... 	
+	Depende de Usted. No tengo ninguna razón para usar Windows. Para usuarios expertos: Seleccionar "Más Opciones"
+	4.7 Asigne el espacio que desea para Ubuntu. Acá hay que tener especial cuidad, ya que es irreversible. Si usted
+	asigna muy poco espacio y necesita más eventualmente, debe realizar estos pasos nuevamente, realizar un BackUp y 
+	asegurarse de no perder información. Esto puede ser muy tedioso, teniendo en cuenta que cada persona personaliza 
+	el computador, así que se necesitaría instalar TODO nuevamente. De manera análoga, puede que no le guste Ubuntu 
+	(si es el caso me gustaría saber porqué alejandro.cardenasa@konradlorenz.edu.co) y haya asignado espacio que 
+	requiera para otro sistema operativo. La nueva asignación de espacio puede tardar varios minutos. 
+	4.8 
+	
