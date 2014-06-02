@@ -16,7 +16,7 @@ theorems-ams-extended
 theorems-chap
 \end_modules
 \maintain_unincluded_children false
-\language english
+\language spanish
 \language_package auto
 \inputencoding auto
 \fontencoding global
@@ -553,7 +553,7 @@ crear nuevo repositorio
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
