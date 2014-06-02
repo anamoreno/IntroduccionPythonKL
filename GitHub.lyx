@@ -16,7 +16,7 @@ theorems-ams-extended
 theorems-chap
 \end_modules
 \maintain_unincluded_children false
-\language spanish
+\language english
 \language_package auto
 \inputencoding auto
 \fontencoding global
@@ -35,7 +35,7 @@ theorems-chap
 \output_sync 0
 \bibtex_command default
 \index_command default
-\paperfontsize default
+\paperfontsize 12
 \spacing single
 \use_hyperref true
 \pdf_author "Alejandro Cárdenas Avendaño"
@@ -64,12 +64,14 @@ theorems-chap
 \shortcut idx
 \color #008000
 \end_index
-\topmargin 1cm
-\bottommargin 1cm
+\leftmargin 4cm
+\topmargin 3cm
+\rightmargin 2cm
+\bottommargin 3cm
 \secnumdepth 3
 \tocdepth 3
 \paragraph_separation indent
-\paragraph_indentation default
+\paragraph_indentation 0bp
 \quotes_language english
 \papercolumns 1
 \papersides 1
@@ -84,6 +86,8 @@ theorems-chap
 \begin_body
 
 \begin_layout Standard
+
+\lang spanish-mexico
 \begin_inset ERT
 status open
 
@@ -91,93 +95,27 @@ status open
 
 
 \backslash
-doc
+renewcommand{
+\backslash
+contentsname}{Contenido}
 \end_layout
 
 \begin_layout Plain Layout
 
 
 \backslash
-usepackage{xcolor}
+renewcommand{
+\backslash
+algorithmname}{Código}
 \end_layout
 
 \begin_layout Plain Layout
 
 
 \backslash
-usepackage{listings}
-\end_layout
-
-\begin_layout Plain Layout
-
-
+renewcommand{
 \backslash
-lstdefinestyle{Bash}
-\end_layout
-
-\begin_layout Plain Layout
-
-{language=bash,
-\end_layout
-
-\begin_layout Plain Layout
-
-keywordstyle=
-\backslash
-color{blue}, 
-\end_layout
-
-\begin_layout Plain Layout
-
-basicstyle=
-\backslash
-ttfamily, 
-\end_layout
-
-\begin_layout Plain Layout
-
-morekeywords={peter@kbpet}, 
-\end_layout
-
-\begin_layout Plain Layout
-
-alsoletter={:~$}, 
-\end_layout
-
-\begin_layout Plain Layout
-
-morekeywords=[2]{peter@kbpet:}, 
-\end_layout
-
-\begin_layout Plain Layout
-
-keywordstyle=[2]{
-\backslash
-color{red}},
-\end_layout
-
-\begin_layout Plain Layout
-
-literate={
-\backslash
-$}{{
-\backslash
-textcolor{red}{
-\backslash
-$}}}1           {:}{{
-\backslash
-textcolor{red}{:}}}1          {~}{{
-\backslash
-textcolor{red}{
-\backslash
-textasciitilde}}}1, }
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-begin{document}
+figurename}{Figura}
 \end_layout
 
 \end_inset
@@ -186,18 +124,78 @@ begin{document}
 \end_layout
 
 \begin_layout Title
+
+\lang spanish-mexico
 GitHub
 \end_layout
 
 \begin_layout Author
+
+\lang spanish-mexico
 Alejandro Cárdenas-Avendaño & Julián Jiménez-Cárdenas
 \end_layout
 
+\begin_layout Standard
+
+\lang spanish-mexico
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+thispagestyle{empty}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish-mexico
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pagenumbering{arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
+
+\lang spanish-mexico
 Introducción
 \end_layout
 
 \begin_layout Standard
+
+\lang spanish-mexico
 La siguiente guía tiene como objetivo enseñarle al lector los usos básicos
  de GitHub, una herramienta que se usa para construir y modificar todo tipo
  de archivos en comunidad, es decir, donde se puede trabajar en conjunto
@@ -206,9 +204,11 @@ La siguiente guía tiene como objetivo enseñarle al lector los usos básicos
 \end_inset
 
 
-\begin_inset Newline newline
-\end_inset
+\end_layout
 
+\begin_layout Standard
+
+\lang spanish-mexico
 El semillero de talentos hará uso de esta herramienta virtual principalmente
  para recibir ayuda de los demás integrantes del repositorio en la optimización
  de los archivos y para dar a conocer las propuestas que tiene cada integrante
@@ -217,9 +217,11 @@ El semillero de talentos hará uso de esta herramienta virtual principalmente
 \end_inset
 
 
-\begin_inset Newline newline
-\end_inset
+\end_layout
 
+\begin_layout Standard
+
+\lang spanish-mexico
 Después de leer la guía, el participante del Semillero de Talentos tendrá
  a su disposición varias de las herramientas que posee GitHub, por lo que
  podrá montar archivos en repositorios para su revisión por parte de la
@@ -229,32 +231,30 @@ Después de leer la guía, el participante del Semillero de Talentos tendrá
 \end_layout
 
 \begin_layout Section
+
+\lang spanish-mexico
 Puesta a Punto
 \end_layout
 
 \begin_layout Standard
+
+\lang spanish-mexico
 Lo primero que se debe hacer es, naturalmente, instalar GitHub.
  Dependiendo de su OS deberá seguir las instrucciones propuestas en la siguiente
  página 
-\begin_inset Flex URL
-status collapsed
-
-\begin_layout Plain Layout
-
-git-scm.com/downloads
-\end_layout
+\begin_inset CommandInset href
+LatexCommand href
+name "git-scm.com/downloads"
+target "git-scm.com/downloads"
 
 \end_inset
 
 .
  También puede trabajar con GitHub desde el dominio web 
-\begin_inset Flex URL
-status collapsed
-
-\begin_layout Plain Layout
-
-www.github.com
-\end_layout
+\begin_inset CommandInset href
+LatexCommand href
+name "www.github.com"
+target "www.github.com"
 
 \end_inset
 
@@ -263,42 +263,38 @@ www.github.com
 \end_inset
 
 
-\begin_inset Newline newline
-\end_inset
+\end_layout
 
+\begin_layout Standard
+
+\lang spanish-mexico
 Si se escoge la primera opción, se deben realizar los siguientes pasos:
 \end_layout
 
 \begin_layout Subsection
-Nombre de Usuari
-o 
+
+\lang spanish-mexico
+Nombre de Usuario
 \end_layout
 
 \begin_layout Standard
-Primero debe
+
+\lang spanish-mexico
+Primero debe decirle a Git su nombre, así sus comentarios serán propiamente
+ etiquetados.
+ Para ello debe introducir el siguiente comando en su terminal, preferiblemente
+ desde root.
 \end_layout
 
 \begin_layout Standard
-\begin_inset ERT
+\begin_inset listings
+lstparams "language=bash"
+inline false
 status open
 
 \begin_layout Plain Layout
 
-
-\backslash
-begin{lstlisting}[style=Bash]
-\end_layout
-
-\begin_layout Plain Layout
-
-$ git config --global user.name "Su nombre aquí"
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-end{lstlisting} 
+git config --global user.name "Su nombre aquí"
 \end_layout
 
 \end_inset
@@ -306,11 +302,212 @@ end{lstlisting}
 
 \end_layout
 
+\begin_layout Subsection
+
+\lang spanish-mexico
+Correo Electrónico
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish-mexico
+Git guarda su dirección de correo electrónico en los comentarios que hace.
+ Ellos usan la dirección de correo electrónico para asociar sus comentarios
+ (los del lector) con su cuenta de GitHub.
+ Introduzca el siguiente comando en la terminal para ello.
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish-mexico
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+git config --global user.email "su_correo@ejemplo.com"
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+
+\lang spanish-mexico
+Puesta a Punto Automática
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish-mexico
+Hice un shell script que puede ser usado para hacer todo esto automáticamente,
+ desde instalar GitHub para distribuciones UNIX hasta configurarlo todo.
+ Para usarlo simplemente tiene seguir las instrucciones descritas a continuación.
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish-mexico
+\begin_inset Float algorithm
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+
+\lang spanish-mexico
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\lang spanish-mexico
+Configurando script
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\lang spanish-mexico
+Primero debe copiar el siguiente código en su editor de textos de preferencia
+ y guardarlo en el formato predeterminado.
+ 
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "extendedchars=true,language=bash"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+#!/bin/bash
+\end_layout
+
+\begin_layout Plain Layout
+
+function bard {
+\end_layout
+
+\begin_layout Plain Layout
+
+git config --global user.name "Su nombre aquí" 
+\end_layout
+
+\begin_layout Plain Layout
+
+git config --global user.email "su_correo@ejemplo.com" 
+\end_layout
+
+\begin_layout Plain Layout
+
+git config --global credential.helper cache
+\end_layout
+
+\begin_layout Plain Layout
+
+sudo apt-get update
+\end_layout
+
+\begin_layout Plain Layout
+
+sudo apt-get upgrade
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+bard 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\lang spanish-mexico
+Para que el script sea capaz de ejecutarse, debe introducir el siguiente
+ comando en su terminal.
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang spanish-mexico
+\begin_inset listings
+lstparams "language=sh"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+chmod 755 "nombre del script"
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\lang spanish-mexico
+Cuando se pone 755 se obtienen permisos para leer, escribir y ejecutar permisos.
+ Cualquier otra cosa dará únicamente permisos para leer y ejecutar.
+ Si usted desea que su script sea privado (que sólo usted pueda leer y ejecutar)
+ use 700.
+ En este caso, usaremos por defecto 
+\begin_inset Quotes eld
+\end_inset
+
+755
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+
+\lang spanish-mexico
+Página de GitHub
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish-mexico
+Si usted no desea realizar la instalación de Git en su equipo, puede acceder
+ a la página web antes mencionada, donde puede encontrar todas las opciones
+ con las que cuenta GitHub de una manera más intuitiva.
+\end_layout
+
 \begin_layout Section
+
+\lang spanish-mexico
 Repositorios
 \end_layout
 
 \begin_layout Standard
+
+\lang spanish-mexico
 Un repositorio es una especie de carpeta donde se pueden guardar archivos
  de todo tipo, pero, a diferencia de una carpeta normal, el repositorio
  permite que varias personas modifiquen un archivo (si estas personas tienen
@@ -324,57 +521,169 @@ Un repositorio es una especie de carpeta donde se pueden guardar archivos
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish-mexico
+Para crear un repositorio, debe estar en la página de inicio de GitHub.
+ En la parte superior derecha encontrará un 
+\begin_inset Quotes eld
+\end_inset
+
++
+\begin_inset Quotes erd
+\end_inset
+
+, aquí hay varias opciones, pero por ahora usará 
+\begin_inset Quotes eld
+\end_inset
+
+crear nuevo repositorio
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish-mexico
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\lang spanish-mexico
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\lang spanish-mexico
+Creando el Repositorio
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang spanish-mexico
+Llene toda la información en esta página.
+ Cuando termine, haga clic en 
+\begin_inset Quotes eld
+\end_inset
+
+Crear Repositorio
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset href
+LatexCommand href
+name "https://github-images.s3.amazonaws.com/help/bootcamp/bootcamp_2_repoinfo.png"
+target "https://github-images.s3.amazonaws.com/help/bootcamp/bootcamp_2_repoinfo.png"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish-mexico
+Se recomienda hacer un README.md para mostrar información acerca de su repositori
+o.
+ Mientras esté en el repositorio, puede usar la herramienta antes usada
+ para crear el repositorio, que está ubicada en la parte superior derecha
+ para añadir colaboradores, que tienen autoría sobre su repositorio.
 \begin_inset Newline newline
 \end_inset
 
 
 \end_layout
 
-\begin_layout Section
-Ejemplo -Linux-
-\end_layout
-
 \begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
 
-\begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
-
-\end_layout
-
+\lang spanish-mexico
+Para añadir archivos a su repositorio, tan sólo debe hacer clic en el 
+\begin_inset Quotes eld
 \end_inset
 
++
+\begin_inset Quotes erd
+\end_inset
 
-\end_layout
+ que está justo en frente del nombre de su repositorio.
+ Existe una herramienta llamada 
+\begin_inset Quotes eld
+\end_inset
 
-\begin_layout Plain Layout
+Fork
+\begin_inset Quotes erd
+\end_inset
 
-\end_layout
-
+, usada para copiar y pegar un repositorio.
+ Esto sirve para tomar las bases de un repositorio y empezar a desarrollar
+ un proyecto desde uno ya existente.
+\begin_inset Newline newline
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-\begin_inset ERT
-status open
 
-\begin_layout Plain Layout
+\lang spanish-mexico
+Puede hacer clic en la opción 
+\begin_inset Quotes eld
+\end_inset
 
+Watch
+\begin_inset Quotes erd
+\end_inset
 
-\backslash
-end{document}
-\end_layout
+ para recibir notificaciones de sus repositorios favoritos.
+ También puede aportar a otros repositorios con la opción de mandar solicitud,
+ donde usted muestra los aportes que realizaría a cierto archivo de un repositor
+io (tenga en cuenta que esta opción sólo está activa si usted no tiene autoría
+ en susodicho repositorio).
+ En la sección 
+\begin_inset Quotes eld
+\end_inset
 
+Issues
+\begin_inset Quotes erd
+\end_inset
+
+ de cada repositorio se discuten los problemas que necesitan ser arreglados.
+\begin_inset Newline newline
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish-mexico
+Esto es prácticamente todo lo que necesita saber para poder usar GitHub.
+ Tenga en cuenta que GitHub puede ser usado desde una terminal con gran
+ libertad, pero para usted será más fácil hacerlo desde un navegador web.
+ Hay muchas otras opciones que están implementadas en GitHub, pero usted
+ ya conoce las necesarias para darse a conocer.
 \end_layout
 
 \end_body
