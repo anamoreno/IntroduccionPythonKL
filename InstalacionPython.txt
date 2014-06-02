@@ -1,5 +1,6 @@
 Software para Instalar:
 Esta lista de Software está basada en la proporcionada para el SciCoder 2013 (http://scicoder.org)
+Cualquier inconveniente o error, por favor detalladamente escriba un correo a alejandro.cardenasa@konradlorenz.edu.co
 
 Esta guía se hizo para instalar el software en:
 
@@ -94,7 +95,7 @@ Linux:
 - Si desea lea las instrucciones. Presionando la tecla q, llega al final del documento. Digite "yes" y presione ENTER. 
 - ENTER para confirmar la ubicación.
 - La instalación puede tardar varios minutos. 
-- Digite "yes" para agregar la instlacion al PATH
+- Digite "yes" para agregar la instalación al PATH
 - Si todo sale bien debe aparecer: "Thank you for installing Anaconda!"
 
 Abra una nueva terminal y digite: python
@@ -147,79 +148,42 @@ Primero, cree una cuenta en GitHub si no tiene una http://github.com.
 
 Segundo, instale GitHub en su computador. Las instrucciones están en el documento GitHub.pdf
 
+______________________
+
 * R.
 
-Use this installer: http://cran.r-project.org/mirrors.html 
+Utilice el instalador de : http://cran.r-project.org/mirrors.html 
 Recomiendo el Servidor de la Universidad Nacional: http://www.laqee.unal.edu.co/CRAN/
 
 * Paquetes adicionales para R.
 
 FITSio, MASS, scatterplot3d, Hmisc, MASS, scatterplot3d
 
-Linux: To install these, open R, and in the R console execute the following
-command for each package. For example, to install Hmisc:
+Linux: Para instarlos abra R y utilice la consola de R para ejecutar el siguiente comando para cada paquete:
+Por ejemplo, para instalar Hmisc:
 
 install.packages(repos="http://cran.r-project.org", "Hmisc")
 
-Mac: To install additional R packages, open the R application and select "Packages & Data/Package Installer" menu. With "CRAN (binaries)" selected (default), click "Get List". Use the package search field to find the packages listed above and click the install button to install.
+Mac: Para instalar paquetes adicionales de R abra la aplicación y selecciones el menu "Packages & Data/Package Installer" menu.
+Con "CRAN (binaries)" seleccionado (por defecto) haga click en "Get List". Use el campo de búsqueda para encontrar 
+los paquetes anteriores y haga click en el boton "instalar".
 
-* Doxygen 1.8.1.1 - http://www.doxygen.org
+______________________
+* Software específico para Mac.
 
-Note the dmg installer for the Mac. 
-
-* SQLite - http://www.sqlite.org/
-
-Linux: Use your package manager.
-Mac: You'll already have this installed.
-
-* SQLite Manager - https://addons.mozilla.org/en-US/firefox/addon/5817/ 
-(This is a Firefox add-on)
-
-* Evernote - http://www.evernote.com
-
-* Data.
-
-Download this data file for use at the workshop. It's pretty big (1.8GB), so please make sure you do this before arriving:
-
-http://data.sdss3.org/sas/dr9/sdss/sspp/ssppOut-dr9.fits
-
-You can alternatively download it from a terminal window with this command:
-
-% curl -O http://data.sdss3.org/sas/dr9/sdss/sspp/ssppOut-dr9.fits
-
-We may ask you to download another file before the workshop.
-
-
-* Mac-specific software.
-
-- Xcode. This is a free download, available from the Mac App Store. Please follow the installation followup directions here: http://www.scicoder.org/2012/03/developer-tools-on-os-x-10-7-lion/
-
-- SourceTree. Free, available in the Mac App Store.
+- Xcode. Es gratis y se obtiene directamente desde el App Store. Siga las siguientes instrucciones para realizar 
+la instalación correctamente. http://www.scicoder.org/2012/03/developer-tools-on-os-x-10-7-lion/
 
 - TextWranger, http://www.barebones.com/products/textwrangler/
 
 - iTerm: http://iterm.sourceforge.net/downloads.shtml
 
-- Mou: http://mouapp.com
-
 - TeXShop: http://pages.uoregon.edu/koch/texshop/obtaining.html
 
-- XQuartz (make sure you have the latest version): http://xquartz.macosforge.org/landing/
+- XQuartz (descargue la última versión): http://xquartz.macosforge.org/landing/
 
-- Papers: http://www.papersapp.com/papers/
+* Software específico para Linux.
 
-- MacFusion: http://www.danielzhang.info/drupal6/system/files/Macfusion.app-built-by-Daniel-Zhang.zip
+- Kate: http://kate-editor.org/get-it/
 
-- OSXFUSE: http://osxfuse.github.io
-When you install this, make sure to select "customize" and that "MacFUSE Compatibility Layer" is checked.
-
-- SSHKeychain 0.8.2 - http://sshkeychain.sourceforge.net/
-
-* Linux-specific software.
-
-- Kate: http://kate-editor.org/get-it/ (but probably available from your package manager)
-
-- FUSE: packages: fuse-utils & sshfs
-
-
-That should keep you a bit busy for now. We may add a few more things later!
+Esta información puede distribuirse libremente
