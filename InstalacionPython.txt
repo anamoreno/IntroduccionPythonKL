@@ -34,7 +34,9 @@ la versión académica (opcional):
 
 https://store.continuum.io/cshop/academicanaconda
 
-En el formato digite su institución educativa. He incluido el dominio @konradlorenz.edu.co 
+En el formato digite su institución educativa. Me he puesto en contacto con Continuum Analytics y 
+han incluido el dominio @konradlorenz.edu.co
+
 A vuelta de correo le enviarán un archivo que debe ubicar en el directorio de la instalación ~/.continuum
 válido por un año. 
 
@@ -184,6 +186,6 @@ la instalación correctamente. http://www.scicoder.org/2012/03/developer-tools-o
 
 * Software específico para Linux.
 
-- Kate: http://kate-editor.org/get-it/
+- Kate: http://kate-editor.org/get-it/ (Se puede obtener desde ek Centro de Software de Ubuntu)
 
 Esta información puede distribuirse libremente
