@@ -1,0 +1,225 @@
+Software para Instalar:
+Esta lista de Software está basada en la proporcionada para el SciCoder 2013 (http://scicoder.org)
+
+Esta guía se hizo para instalar el software en:
+
+Mac OS 10.9 Mavericks 
+Ubuntu 14.04 LTS
+
+Linux:
+Antes de iniciar: Entre a una terminal y digite sudo apt-get update
+
+A continuación describiré el software que se debe traer instalado para el curso.
+
+
+Software:
+
+Los usuarios de Linux deben utilizar el comando apt-get o el instalador GUI cuando esté disponible
+
+* Python - Se necesitará la versión de Python 2.7 o superior. Los sistemas operativos Mac y Linux incluyen la versión requerida.
+Sin embargo, se utilizarán paquetes adicionales que no vienen por defecto con el sistema operativo (i.e. numpy, scipy, iPython, etc.)
+Instalar los complementos puede ser tedioso, por esa razón recomiendo instalar una distribución independiente de Python en su sistema. 
+La ventaja añadida es que, si la instalación de Python se rompe de alguna manera, su sistema no será afectado. 
+
+La distribución recomendada es Anaconda:
+
+https://store.continuum.io/cshop/anaconda/
+
+Es gratis para uso académico, NO hay que pagar por la versión. 
+
+Al descargar Anaconda, la organización solicita un correo electrónico que no será valido. Sin
+embargo, sugiero utilizar datos correctos para mantenerse al día en las actualizaciones. Así que mejor descargar 
+la versión académica (opcional):
+
+https://store.continuum.io/cshop/academicanaconda
+
+En el formato digite su institución educativa. He incluido el dominio @konradlorenz.edu.co 
+A vuelta de correo le enviarán un archivo que debe ubicar en el directorio de la instalación ~/.continuum
+válido por un año. 
+
+Descargue el instalador desde el siguiente enlace (Verifique que descarga el instalador de adecuado):
+
+64 versus 32 bit
+Para muchas instalaciones binarias debe decidir correctamente: ¿32-bit o 64-bit? Realmente el problema está
+si su computador es de 32 bit, puesto que debe instalar el de 32 bit obligatoriamente. Sin embargo, el 
+recíproco no es válido, puede instalar 32 bit o 64 bit en un máquina de 64 bit. Si su computador es 64 bit, recomiendo 
+descargas la de 64 bit. 
+
+----------------------------------------------------------------
+Para saber qué arquitectura de software tiene haga lo siguiente:
+
+MacOSX: 
+
+Vaya a la manzana de la esquina superior izquierda y escoja la opción "Acerca de este Mac"
+y luego "Más información", busque el nombre del Procesador:
+
+Nombre del Procesador 		32- or 64-bit
+Intel Core Solo				32 bit
+Intel Core Duo				32 bit
+Intel Core 2 Duo			64 bit
+Intel Quad-Core Xeon		64 bit
+Dual-Core Intel Xeon		64 bit
+Quad-Core Intel Xeon		64 bit	
+Core i3						64 bit
+Core i5						64 bit
+Core i7						64 bit	
+
+Fuente:
+http://support.apple.com/kb/HT3696?viewlocale=en_US&locale=en_US
+
+
+Linux: 
+
+En una terminal digite uname -mpi Si usted ve x86_64 x86_64 x86_64 su computador es de 64-bit. 
+Si ve uno o más i686 o i386 está utilizando una máquina de 32-bit
+----------------------------------------------------------------
+
+Ahora sí descargue correctamente la versión
+
+http://continuum.io/downloads.html
+
+
+Una vez descargado, utilice la terminal para ir al directorio de la descarga y, asumiendo que tiene el mismo nombre el archivo descargado digite
+en la línea de comando (una terminal):
+
+Nota: El instalador le preguntará dónde desea instalar el software. Por defecto está predeterminado el directorio home. Sin embargo, recomiendo crear una carpeta 
+para este fin. Cualquier forma funciona bien. 
+
+Mac:
+% bash Anaconda-1.5.1-MacOSX-x86_64.sh
+
+Linux:
+% bash Anaconda-2.0.0-Linux-x86_64.sh
+- Presione ENTER para continuar
+- Si desea lea las instrucciones. Presionando la tecla q, llega al final del documento. Digite "yes" y presione ENTER. 
+- ENTER para confirmar la ubicación.
+- La instalación puede tardar varios minutos. 
+- Digite "yes" para agregar la instlacion al PATH
+- Si todo sale bien debe aparecer: "Thank you for installing Anaconda!"
+
+Abra una nueva terminal y digite: python
+Si todo ha salido bien, deberá aparecer
+
+Mac:
+Python 2.7.6 |Anaconda 2.0.0 (x86_64)| (default, May 27 2014, 14:58:54) 
+[GCC 4.0.1 (Apple Inc. build 5493)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+Anaconda is brought to you by Continuum Analytics.
+Please check out: http://continuum.io and https://binstar.org
+>>> 
+
+Linux:
+Python 2.7.6 |Anaconda 2.0.0 (64 -bit)| (default, May 27 2014, 14:58:54) 
+[GCC 4.1.2 20080704 (Red Hat 4.1.2 -54)] on linux2
+Type "help", "copyright", "credits" or "license" for more information.
+Anaconda is brought to you by Continuum Analytics.
+Please check out: http://continuum.io and https://binstar.org
+>>> 
+
+Presione Ctrl d para salir. 
+
+Una descripción alternativa que resulta útil para la instalación está en:
+
+http://python4astronomers.github.io/installation/python_install.html
+
+______________________
+
+* Paquetes adicionales de Python. Para instalarlos abra una nueva terminal y digite:
+
+pip install <nombre del paquete>
+
+para actualizar un paquete digite:
+
+% pip install --upgrade <nombre del paquete>
+
+Paquetes adicionales:
+
+emcee
+sqlalchemy
+scikit-image
+scikit-learn
+
+______________________
+
+* Git. 
+
+Primero, cree una cuenta en GitHub si no tiene una http://github.com.
+
+Segundo, instale GitHub en su computador. Las instrucciones están en el documento GitHub.pdf
+
+* R.
+
+Use this installer: http://cran.r-project.org/mirrors.html 
+Recomiendo el Servidor de la Universidad Nacional: http://www.laqee.unal.edu.co/CRAN/
+
+* Paquetes adicionales para R.
+
+FITSio, MASS, scatterplot3d, Hmisc, MASS, scatterplot3d
+
+Linux: To install these, open R, and in the R console execute the following
+command for each package. For example, to install Hmisc:
+
+install.packages(repos="http://cran.r-project.org", "Hmisc")
+
+Mac: To install additional R packages, open the R application and select "Packages & Data/Package Installer" menu. With "CRAN (binaries)" selected (default), click "Get List". Use the package search field to find the packages listed above and click the install button to install.
+
+* Doxygen 1.8.1.1 - http://www.doxygen.org
+
+Note the dmg installer for the Mac. 
+
+* SQLite - http://www.sqlite.org/
+
+Linux: Use your package manager.
+Mac: You'll already have this installed.
+
+* SQLite Manager - https://addons.mozilla.org/en-US/firefox/addon/5817/ 
+(This is a Firefox add-on)
+
+* Evernote - http://www.evernote.com
+
+* Data.
+
+Download this data file for use at the workshop. It's pretty big (1.8GB), so please make sure you do this before arriving:
+
+http://data.sdss3.org/sas/dr9/sdss/sspp/ssppOut-dr9.fits
+
+You can alternatively download it from a terminal window with this command:
+
+% curl -O http://data.sdss3.org/sas/dr9/sdss/sspp/ssppOut-dr9.fits
+
+We may ask you to download another file before the workshop.
+
+
+* Mac-specific software.
+
+- Xcode. This is a free download, available from the Mac App Store. Please follow the installation followup directions here: http://www.scicoder.org/2012/03/developer-tools-on-os-x-10-7-lion/
+
+- SourceTree. Free, available in the Mac App Store.
+
+- TextWranger, http://www.barebones.com/products/textwrangler/
+
+- iTerm: http://iterm.sourceforge.net/downloads.shtml
+
+- Mou: http://mouapp.com
+
+- TeXShop: http://pages.uoregon.edu/koch/texshop/obtaining.html
+
+- XQuartz (make sure you have the latest version): http://xquartz.macosforge.org/landing/
+
+- Papers: http://www.papersapp.com/papers/
+
+- MacFusion: http://www.danielzhang.info/drupal6/system/files/Macfusion.app-built-by-Daniel-Zhang.zip
+
+- OSXFUSE: http://osxfuse.github.io
+When you install this, make sure to select "customize" and that "MacFUSE Compatibility Layer" is checked.
+
+- SSHKeychain 0.8.2 - http://sshkeychain.sourceforge.net/
+
+* Linux-specific software.
+
+- Kate: http://kate-editor.org/get-it/ (but probably available from your package manager)
+
+- FUSE: packages: fuse-utils & sshfs
+
+
+That should keep you a bit busy for now. We may add a few more things later!

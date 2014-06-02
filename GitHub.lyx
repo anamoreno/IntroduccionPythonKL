@@ -271,6 +271,13 @@ target "www.github.com"
 Si se escoge la primera opción, se deben realizar los siguientes pasos:
 \end_layout
 
+\begin_layout Standard
+
+\lang spanish-mexico
+La instalación se debe hacer en Ubuntu: sudo apt-get install git y seguir
+ las instrucciones.
+\end_layout
+
 \begin_layout Subsection
 
 \lang spanish-mexico
