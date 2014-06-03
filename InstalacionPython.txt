@@ -7,6 +7,22 @@ se escribió y se probó para:
 - Mac OS 10.9 Mavericks 
 - Ubuntu 14.04 LTS
 
+Nota personal: Muchas veces las personas piensan que su computador personal es muy viejo o lento. La verdad, 
+sí puede ser viejo pero la lentitud es un asunto diferente. Los computadores en general funcionan bien cuando
+tienen instalado el Sistema Operativo para el cual fueron diseñados. Windows y Mac OS tienen la particularidad
+de actualizar el sistema para hacerlo más robusto y mejor, aplica más para Mac, y por lo tanto más pesado.
+El nuevo sistema operativo está diseñado para otra máquina, no para la que usted compró con otro OS. Por eso no 
+recomiendo los Upgrades de sistema. 
+Su computador, no importa de qué año sea servirá perfectamente si instala una versión adecuada de Ubuntu. 
+
+Ahora bien, si usted tiene pensado hacer grandes simulaciones, correr video, imágenes o procesar grandes volúmenes de
+datos un computador, el mejor del mercado, no le sirve para eso. Para empezar, el mejor computador que se vende en una tienda
+Mac no tiene ni siquiera el espacio en disco para por ejemplo, almacenar (¡sólo almacenar!) las imagenes de una sola noche de
+observación de todo el cielo con un telescopio como el Subaru en Hawai (tenga en cuenta que con una sola noche de observación
+no se hace estadística). 
+
+Escribo esto para que se haga la idea de que la ciencia, la de  frontera en análisis de datos y simulaciones,
+no se hace en un computador personal. Se corre en centros de cómputo. Sin embargo, el código sí se escribe en computadores personales.  
 ______________________
 Linux:
 Antes de iniciar: Entre a una terminal y digite sudo apt-get update
