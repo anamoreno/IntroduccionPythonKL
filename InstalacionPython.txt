@@ -1,21 +1,28 @@
-Software para Instalar:
-Esta lista de Software está basada en la proporcionada para el SciCoder 2013 (http://scicoder.org)
+Software para Instalar
 Cualquier inconveniente o error, por favor detalladamente escriba un correo a alejandro.cardenasa@konradlorenz.edu.co
 
-Esta guía se hizo para instalar el software en:
+Esta lista de Software está basada en la proporcionada para el SciCoder (http://scicoder.org), 
+se escribió y se probó para:
 
-Mac OS 10.9 Mavericks 
-Ubuntu 14.04 LTS
+- Mac OS 10.9 Mavericks 
+- Ubuntu 14.04 LTS
 
+______________________
 Linux:
 Antes de iniciar: Entre a una terminal y digite sudo apt-get update
 
-A continuación describiré el software que se debe traer instalado para el curso.
+Mac:
+- Instale Xcode (lo puede hacer desde el App Store).
+- Ingrese a Xcode y entre a las preferencias. Desde la pestaña de "Downloads" instale la línea de comandos (Command Line Developer Tools). 
+______________________
 
+A continuación describiré el software que se debe traer instalado para el curso.
 
 Software:
 
-Los usuarios de Linux deben utilizar el comando apt-get o el instalador GUI cuando esté disponible
+______________________
+Los usuarios de Linux deben utilizar el comando apt-get o el instalador GUI cuando esté disponible para
+el software de esta lista.
 
 * Python - Se necesitará la versión de Python 2.7 o superior. Los sistemas operativos Mac y Linux incluyen la versión requerida.
 Sin embargo, se utilizarán paquetes adicionales que no vienen por defecto con el sistema operativo (i.e. numpy, scipy, iPython, etc.)
@@ -40,7 +47,7 @@ han incluido el dominio @konradlorenz.edu.co
 A vuelta de correo le enviarán un archivo que debe ubicar en el directorio de la instalación ~/.continuum
 válido por un año. 
 
-Descargue el instalador desde el siguiente enlace (Verifique que descarga el instalador de adecuado):
+Descargue el instalador desde el siguiente enlace (Verifique que descarga el instalador adecuado):
 
 64 versus 32 bit
 Para muchas instalaciones binarias debe decidir correctamente: ¿32-bit o 64-bit? Realmente el problema está
@@ -77,7 +84,7 @@ En una terminal digite uname -mpi Si usted ve x86_64 x86_64 x86_64 su computador
 Si ve uno o más i686 o i386 está utilizando una máquina de 32-bit
 ----------------------------------------------------------------
 
-Ahora sí descargue correctamente la versión
+Ahora sí descargue Anaconda
 
 http://continuum.io/downloads.html
 
@@ -89,7 +96,7 @@ Nota: El instalador le preguntará dónde desea instalar el software. Por defect
 para este fin. Cualquier forma funciona bien. 
 
 Mac:
-% bash Anaconda-1.5.1-MacOSX-x86_64.sh
+El archivo descargado es un ejecutable. Siga las instrucciones. 
 
 Linux:
 % bash Anaconda-2.0.0-Linux-x86_64.sh
@@ -187,5 +194,7 @@ la instalación correctamente. http://www.scicoder.org/2012/03/developer-tools-o
 * Software específico para Linux.
 
 - Kate: http://kate-editor.org/get-it/ (Se puede obtener desde ek Centro de Software de Ubuntu)
+
+______________________
 
 Esta información puede distribuirse libremente
