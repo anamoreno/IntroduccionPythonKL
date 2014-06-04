@@ -1,0 +1,27 @@
+¿Qué es un Shell?
+
+El shell actúa como el puente entre usted y el núcleo de su máquina. El núcleo rige los recursos (memoria, procesador y disco) que cada proceso recibe y se asegura de que todo está funcionando como debería.
+
+De ahí la importancia de que el Kernel (núcleo)funciona bien. Cuando no sucede las aplicaciones comienzan colapsar y el computador en general, empieza a hacer cosas raras. Es probable que haya tropezado con esta situación antes, incluso si usted no lo sabía en ese momento: los usuarios de Windows están familiarizados con la "pantalla azul de la muerte", mientras que los que hemos utilizado una de las varias encarnaciones de Mac OS X, probablemente hemos encontrado algunos errores de kernel muy específicos. 
+
+Existen varios tipos de Shell, creados desde los 40, y todos ellos hacen el mismo trabajo, pero cada uno es único en las características que ofrece y la sintaxis que soporta.
+
+cd "Change Directory"
+ls "List of contents"
+rm "Remove Files"
+
+Con las flechas se puede navegar por los comandos digitados
+
+Los comandos usuales son:
+
+./configure
+make
+make check
+make install
+make install check
+make clean
+
+
+Fuentes:
+http://www.macdevcenter.com/pub/a/mac/2004/02/24/bash.html
+http://coolestguidesontheplanet.com/add-shell-path-osx/
