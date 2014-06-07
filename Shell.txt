@@ -21,7 +21,41 @@ make install
 make install check
 make clean
 
+PATH=/home/<USERNAME>/mpich-install/bin:$PATH
+/opt/local/bin/mpicc
+source .bashrc
+
+n Unix, what is my path, and how do I set or modify it?
+
+Note: Only advanced users should attempt to edit their path. If you feel that you need to edit your path, but feel unsure of how to safely do it, consult your system administrator. If you are a student, faculty member, or staff member at Indiana University, you may also want to contact your class instructor or your department's computing support provider.
+
+The PATH environment variable is a colon-delimited list of directories that your shell searches through when you enter a command.
+
+Program files (executables) are kept in many different places on the Unix system. Your path tells the Unix shell where to look on the system when you request a particular program. Having more directories in your path will reduce the number of times you get "Command not found" errors, but might put you at greater risk of activating a Trojan horse.
+
+To find out what your path is, at the Unix shell prompt, enter:
+
+  echo $PATH
+Your path will look something like the following.
+
+  /usr2/username/bin:/usr/local/bin:/usr/bin:.
+You will see your username in place of username. Using the above example path, if you enter the ls command, your shell will look for the appropriate executable file in the following order: first, it would look through the directory /usr2/username/bin, then /usr/local/bin, then /usr/bin, and finally the local directory, indicated by the  .  (a period).
+
+To modify your path
+If you are using csh or tcsh, at the shell prompt, enter:
+
+  setenv PATH $PATH\:/dir/path
+If you are using sh, ksh, or bash, at the shell prompt, enter:
+
+  PATH=$PATH\:/dir/path ; export PATH
+In all cases, replace /dir/path with the directory you want the shell to search.
+
+Note: The earlier entries in the path take precedence over the later ones. If you want the directories you add to your path to take precedence, in the examples above, replace $PATH\:/dir/path with /dir/path:$PATH .
+
+To make these changes permanent, add the commands described above to the end of your .cshrc file (for csh and tcsh), .profile file (for sh and ksh), or .bash_profile file (for bash).
+
 
 Fuentes:
 http://www.macdevcenter.com/pub/a/mac/2004/02/24/bash.html
 http://coolestguidesontheplanet.com/add-shell-path-osx/
+http://kb.iu.edu/data/acar.html
