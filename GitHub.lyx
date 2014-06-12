@@ -1,5 +1,5 @@
-#LyX 2.0 created this file. For more info see http://www.lyx.org/
-\lyxformat 413
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
 \begin_document
 \begin_header
 \textclass article
@@ -23,13 +23,13 @@ theorems-chap
 \font_roman default
 \font_sans default
 \font_typewriter default
+\font_math auto
 \font_default_family default
 \use_non_tex_fonts false
 \font_sc false
 \font_osf false
 \font_sf_scale 100
 \font_tt_scale 100
-
 \graphics default
 \default_output_format default
 \output_sync 0
@@ -50,15 +50,24 @@ theorems-chap
 \pdf_pdfusetitle true
 \papersize default
 \use_geometry true
-\use_amsmath 1
-\use_esint 1
-\use_mhchem 1
-\use_mathdots 1
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 0
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 0
+\use_package mhchem 1
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
 \cite_engine basic
+\cite_engine_type default
+\biblio_style plain
 \use_bibtopic false
 \use_indices false
 \paperorientation portrait
 \suppress_date false
+\justification true
 \use_refstyle 1
 \index Index
 \shortcut idx
@@ -72,7 +81,7 @@ theorems-chap
 \tocdepth 3
 \paragraph_separation indent
 \paragraph_indentation 0bp
-\quotes_language english
+\quotes_language french
 \papercolumns 1
 \papersides 1
 \paperpagestyle default
@@ -84,44 +93,6 @@ theorems-chap
 \end_header
 
 \begin_body
-
-\begin_layout Standard
-
-\lang spanish-mexico
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-renewcommand{
-\backslash
-contentsname}{Contenido}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-renewcommand{
-\backslash
-algorithmname}{Código}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-renewcommand{
-\backslash
-figurename}{Figura}
-\end_layout
-
-\end_inset
-
-
-\end_layout
 
 \begin_layout Title
 
@@ -146,47 +117,6 @@ LatexCommand tableofcontents
 
 \end_layout
 
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-thispagestyle{empty}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-
-\lang spanish-mexico
-\begin_inset Newpage pagebreak
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-pagenumbering{arabic}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
 \begin_layout Section
 
 \lang spanish-mexico
@@ -199,7 +129,7 @@ Introducción
 La siguiente guía tiene como objetivo enseñarle al lector los usos básicos
  de GitHub, una herramienta que se usa para construir y modificar todo tipo
  de archivos en comunidad, es decir, donde se puede trabajar en conjunto
- con otras personas de su selección para el desarrollo de archivos.
+ con otras personas de su selección el desarrollo de archivos.
 \begin_inset Newline newline
 \end_inset
 
@@ -274,8 +204,11 @@ Si se escoge la primera opción, se deben realizar los siguientes pasos:
 \begin_layout Standard
 
 \lang spanish-mexico
-La instalación se debe hacer en Ubuntu: sudo apt-get install git y seguir
- las instrucciones.
+La instalación se debe hacer en Ubuntu: 
+\emph on
+sudo apt-get install git
+\emph default
+ y seguir las instrucciones.
 \end_layout
 
 \begin_layout Subsection
@@ -287,7 +220,7 @@ Nombre de Usuario
 \begin_layout Standard
 
 \lang spanish-mexico
-Primero debe decirle a Git su nombre, así sus comentarios serán propiamente
+Primero debe decirle a GitHub su nombre, así sus comentarios serán propiamente
  etiquetados.
  Para ello debe introducir el siguiente comando en su terminal, preferiblemente
  desde root.
@@ -350,8 +283,9 @@ Puesta a Punto Automática
 \begin_layout Standard
 
 \lang spanish-mexico
-Hice un shell script que puede ser usado para hacer todo esto automáticamente,
- desde instalar GitHub para distribuciones UNIX hasta configurarlo todo.
+A continuación se presenta un shell script que puede ser usado para hacer
+ todo esto automáticamente, desde instalar GitHub para distribuciones UNIX
+ hasta configurarlo todo.
  Para usarlo simplemente tiene seguir las instrucciones descritas a continuación.
 \end_layout
 
@@ -367,7 +301,7 @@ status collapsed
 \begin_layout Plain Layout
 
 \lang spanish-mexico
-\begin_inset Caption
+\begin_inset Caption Standard
 
 \begin_layout Plain Layout
 
@@ -565,7 +499,7 @@ status collapsed
 \begin_layout Plain Layout
 
 \lang spanish-mexico
-\begin_inset Caption
+\begin_inset Caption Standard
 
 \begin_layout Plain Layout
 
