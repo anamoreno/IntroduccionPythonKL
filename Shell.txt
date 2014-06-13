@@ -54,7 +54,11 @@ Note: The earlier entries in the path take precedence over the later ones. If yo
 
 To make these changes permanent, add the commands described above to the end of your .cshrc file (for csh and tcsh), .profile file (for sh and ksh), or .bash_profile file (for bash).
 
-Agregué:
+UBUNTU:
+
+nano ~/.bashrc
+
+MAC:
 
 Arriba en ~/.bash_profile
 export BASH_CONF="bash_profile"
@@ -62,8 +66,15 @@ export BASH_CONF="bash_profile"
 Abrí otra terminal y ejecuté:
 $ echo $BASH_CONF
 
+Con:
+
+source
+pico
+vi
+nno
 
 Fuentes:
 http://www.macdevcenter.com/pub/a/mac/2004/02/24/bash.html
 http://coolestguidesontheplanet.com/add-shell-path-osx/
 http://kb.iu.edu/data/acar.html
+https://help.ubuntu.com/community/Beginners/BashScripting
