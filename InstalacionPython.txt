@@ -29,7 +29,8 @@ Antes de iniciar: Entre a una terminal y digite sudo apt-get update
 
 Mac:
 - Instale Xcode (lo puede hacer desde el App Store).
-- Ingrese a Xcode y entre a las preferencias. Desde la pestaña de "Downloads" instale la línea de comandos (Command Line Developer Tools). 
+- Ingrese a Xcode y entre a las preferencias. Desde la pestaña de "Downloads" instale la línea de comandos (Command Line Developer Tools).
+	Nota: Para Mavericks es necesario realizar la instalación desde la terminal con el comando xcode-select --install
 - Instale Xquartz (http://xquartz.macosforge.org/landing/)
 
 Nota: MacPorts (http://www.macports.org/install.php) solía ser la forma de instalar Python y sus complementos.
