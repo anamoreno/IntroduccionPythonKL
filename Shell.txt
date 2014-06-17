@@ -25,8 +25,6 @@ PATH=/home/<USERNAME>/mpich-install/bin:$PATH
 /opt/local/bin/mpicc
 source .bashrc
 
-n Unix, what is my path, and how do I set or modify it?
-
 Note: Only advanced users should attempt to edit their path. If you feel that you need to edit your path, but feel unsure of how to safely do it, consult your system administrator. If you are a student, faculty member, or staff member at Indiana University, you may also want to contact your class instructor or your department's computing support provider.
 
 The PATH environment variable is a colon-delimited list of directories that your shell searches through when you enter a command.
