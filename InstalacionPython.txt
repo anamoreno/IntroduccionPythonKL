@@ -225,6 +225,8 @@ OPCIONAL:
 Intalar el procesador de textos LyX desde (http://www.lyx.org). Es muy útil y su uso está creciendo en la comunidad
 científica. 
 
+import this
 ______________________
+
 
 Esta información puede distribuirse libremente
