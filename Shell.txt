@@ -1,4 +1,5 @@
 ¿Qué es un Shell?
+Por Alejandro Cárdenas
 
 El shell actúa como el puente entre usted y el núcleo de su máquina. El núcleo rige los recursos (memoria, procesador y disco) que cada proceso recibe y se asegura de que todo está funcionando como debería.
 
