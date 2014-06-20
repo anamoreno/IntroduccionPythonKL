@@ -1,19 +1,19 @@
 ¿Qué es un Shell?
-Por Alejandro Cárdenas
+Por Alejandro Cárdenas-Avendaño
 
 El shell actúa como el puente entre usted y el núcleo de su máquina. El núcleo rige los recursos (memoria, procesador y disco) que cada proceso recibe y se asegura de que todo está funcionando como debería.
 
-De ahí la importancia de que el Kernel (núcleo)funciona bien. Cuando no sucede las aplicaciones comienzan colapsar y el computador en general, empieza a hacer cosas raras. Es probable que haya tropezado con esta situación antes, incluso si usted no lo sabía en ese momento: los usuarios de Windows están familiarizados con la "pantalla azul de la muerte", mientras que los que hemos utilizado una de las varias encarnaciones de Mac OS X, probablemente hemos encontrado algunos errores de kernel muy específicos. 
+De ahí la importancia de que el Kernel (núcleo) funciona bien. Cuando no sucede, las aplicaciones comienzan colapsar y el computador en general, empieza a hacer cosas raras. Es probable que haya tropezado con esta situación antes, incluso si usted no lo sabía en ese momento: los usuarios de Windows están familiarizados con la "pantalla azul de la muerte", mientras que los que hemos utilizado una de las varias encarnaciones de Mac OS X, probablemente hemos encontrado algunos errores de kernel muy específicos. 
 
 Existen varios tipos de Shell, creados desde los 40, y todos ellos hacen el mismo trabajo, pero cada uno es único en las características que ofrece y la sintaxis que soporta.
 
-cd "Change Directory"
-ls "List of contents"
-rm "Remove Files"
+cd "Change Directory" Para cambiar de directorio
+ls "List of contents" Para hacer una lista del contenido
+rm "Remove Files" Para remover archivos
 
 Con las flechas se puede navegar por los comandos digitados
 
-Los comandos usuales son:
+Los comandos usuales son, por ejemplo para instalar sofwtware:
 
 ./configure
 make
@@ -22,36 +22,54 @@ make install
 make install check
 make clean
 
+Y luego debe modificar el Path, por ejemplo:
+
 PATH=/home/<USERNAME>/mpich-install/bin:$PATH
 /opt/local/bin/mpicc
 source .bashrc
 
-Note: Only advanced users should attempt to edit their path. If you feel that you need to edit your path, but feel unsure of how to safely do it, consult your system administrator. If you are a student, faculty member, or staff member at Indiana University, you may also want to contact your class instructor or your department's computing support provider.
+Nota: Solamente cuando sepa qué está haciendo exactamente modifique el PATH. 
 
-The PATH environment variable is a colon-delimited list of directories that your shell searches through when you enter a command.
+¿Qué es el PATH?
 
-Program files (executables) are kept in many different places on the Unix system. Your path tells the Unix shell where to look on the system when you request a particular program. Having more directories in your path will reduce the number of times you get "Command not found" errors, but might put you at greater risk of activating a Trojan horse.
+El ambiente de variables del PATH es una lista de directorios, separados con dos puntos (:), sobre los cuales siempre el Shell busca cuando se digita un comando en la terminal.
 
-To find out what your path is, at the Unix shell prompt, enter:
+Lo programas, es decir ejecutables, se alojan de diferentes maneras en el sistema Unix (MAC y Linux ). El path simplemente almacena las rutas a esas ubicaciones específicas. Entre más direcciones se agreguen al PATH menos veces saldrán errores del tipo: "Command not found". Sin embargo, estas acciones siempre se deben hacer cuidadosamente. 
 
-  echo $PATH
-Your path will look something like the following.
+Para saber dónde está el PATH, desde desde una terminal se debe digitar:
 
-  /usr2/username/bin:/usr/local/bin:/usr/bin:.
-You will see your username in place of username. Using the above example path, if you enter the ls command, your shell will look for the appropriate executable file in the following order: first, it would look through the directory /usr2/username/bin, then /usr/local/bin, then /usr/bin, and finally the local directory, indicated by the  .  (a period).
+echo $PATH 
 
-To modify your path
-If you are using csh or tcsh, at the shell prompt, enter:
+El path será algo así:
+/usr2/username/bin:/usr/local/bin:/usr/bin:.
 
-  setenv PATH $PATH\:/dir/path
-If you are using sh, ksh, or bash, at the shell prompt, enter:
+En donde se verá el nombre de la máquina. Entonces si usted, por ejemplo digita el comando ls, el shell empezará a buscar esa instrucción en el siguiente orden 
 
-  PATH=$PATH\:/dir/path ; export PATH
-In all cases, replace /dir/path with the directory you want the shell to search.
+/usr2/username/bin
 
-Note: The earlier entries in the path take precedence over the later ones. If you want the directories you add to your path to take precedence, in the examples above, replace $PATH\:/dir/path with /dir/path:$PATH .
+luego en 
 
-To make these changes permanent, add the commands described above to the end of your .cshrc file (for csh and tcsh), .profile file (for sh and ksh), or .bash_profile file (for bash).
+/usr/local/bin 
+
+luego en 
+
+/usr/bin 
+
+y finalmente en la carpeta local, instrucción que se hace explícita en .  (un punto).
+
+Para modificar el Path:
+
+Si está usando csh o tcsh, desde la terminal digite:
+setenv PATH $PATH\:/dir/path
+
+Si está usando sh,ksh o bash, desde la terminal digite:
+PATH=$PATH\:/dir/path ; export PATH
+
+En todos los casos, reemplace /dir/path con el directorio deseado para la búsqueda del comando o archivo. 
+
+Fíjese que las entradas anteriores en el path toman precedencia sobre las posteriores. Si usted quiere que los directorios que agrega tengan precedencia, en los ejemplos de arriba, reemplace $PATH\:/dir/path with /dir/path:$PATH .
+
+Para hacer los cambios permanentes debe modificar el archivo que es cargado por la terminal, el cual puede ser un archivo .cshrc (para csh y tcsh), archivo .profile para (sh y ksh) o .bash_profile (para bash). 
 
 UBUNTU:
 
@@ -59,18 +77,23 @@ nano ~/.bashrc
 
 MAC:
 
-Arriba en ~/.bash_profile
-export BASH_CONF="bash_profile"
+pico ~/.bash_profile
 
-Abrí otra terminal y ejecuté:
-$ echo $BASH_CONF
-
-Con:
+En vez de nano o pico, funciona, dependiendo del editor instalado:
 
 source
 pico
 vi
 nno
+
+_________________________
+Nota opcional en algunos casos: 
+
+export BASH_CONF="bash_profile"
+
+Abrir otra terminal y ejecutar:
+$ echo $BASH_CONF
+_________________________
 
 Fuentes:
 http://www.macdevcenter.com/pub/a/mac/2004/02/24/bash.html
