@@ -1,0 +1,19 @@
+GitHub
+Instalación:
+Desde una terminal digitar:
+sudo apt-get install git-core git-gui git-doc
+
+Crear una carpeta en el sitio donde se desea ubicar la información y desde la terminal
+entrar a ella. 
+
+Para Clonar un repositorio:
+
+Desde la página de GitHub entre al repositorio que desea clonar, en la parte derecha aparece
+la opción "HTTPS clone URL"
+
+Para clonar por ejemplo los archivos del curso:
+
+git clone https://github.com/alejandroc137/IntroduccionPythonKL.git
+
+El anterior comando descargará todos los archivos contenidos en el repositorio
+IntroduccionPythonKL 
