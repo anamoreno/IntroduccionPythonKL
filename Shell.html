@@ -1,0 +1,280 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<style>
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "Helvetica Neue", Helvetica, "Hiragino Sans GB", Arial, sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    color: #737373;
+    background-color: white;
+    margin: 10px 13px 10px 13px;
+}
+table {
+	margin: 10px 0 15px 0;
+	border-collapse: collapse;
+}
+td,th {	
+	border: 1px solid #ddd;
+	padding: 3px 10px;
+}
+th {
+	padding: 5px 10px;	
+}
+
+a {
+    color: #0069d6;
+}
+a:hover {
+    color: #0050a3;
+    text-decoration: none;
+}
+a img {
+    border: none;
+}
+p {
+    margin-bottom: 9px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #404040;
+    line-height: 36px;
+}
+h1 {
+    margin-bottom: 18px;
+    font-size: 30px;
+}
+h2 {
+    font-size: 24px;
+}
+h3 {
+    font-size: 18px;
+}
+h4 {
+    font-size: 16px;
+}
+h5 {
+    font-size: 14px;
+}
+h6 {
+    font-size: 13px;
+}
+hr {
+    margin: 0 0 19px;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+}
+blockquote {
+    padding: 13px 13px 21px 15px;
+    margin-bottom: 18px;
+    font-family:georgia,serif;
+    font-style: italic;
+}
+blockquote:before {
+    content:"\201C";
+    font-size:40px;
+    margin-left:-10px;
+    font-family:georgia,serif;
+    color:#eee;
+}
+blockquote p {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 18px;
+    margin-bottom: 0;
+    font-style: italic;
+}
+code, pre {
+    font-family: Monaco, Andale Mono, Courier New, monospace;
+}
+code {
+    background-color: #fee9cc;
+    color: rgba(0, 0, 0, 0.75);
+    padding: 1px 3px;
+    font-size: 12px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+pre {
+    display: block;
+    padding: 14px;
+    margin: 0 0 18px;
+    line-height: 16px;
+    font-size: 11px;
+    border: 1px solid #d9d9d9;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+pre code {
+    background-color: #fff;
+    color:#737373;
+    font-size: 11px;
+    padding: 0;
+}
+sup {
+    font-size: 0.83em;
+    vertical-align: super;
+    line-height: 0;
+}
+* {
+	-webkit-print-color-adjust: exact;
+}
+@media screen and (min-width: 914px) {
+    body {
+        width: 854px;
+        margin:10px auto;
+    }
+}
+@media print {
+	body,code,pre code,h1,h2,h3,h4,h5,h6 {
+		color: black;
+	}
+	table, pre {
+		page-break-inside: avoid;
+	}
+}
+</style>
+<title>¿Qué es un Shell?</title>
+<script type="text/x-mathjax-config">MathJax.Hub.Config({tex2jax:{inlineMath:[['$$$','$$$']]}});</script><script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</head>
+<body>
+<h1>¿Qué es un Shell?</h1>
+
+<p>Por: Alejandro Cárdenas-Avendaño, Konrad Lorenz Fundación Universitaria.
+alejandro.cardenasa@konradlorenz.edu.co</p>
+
+<p>El shell actúa como el puente entre usted y el núcleo de su máquina. El núcleo rige los recursos (memoria, procesador y disco) que cada proceso recibe y se asegura de que todo está funcionando como debería.</p>
+
+<p>De ahí la importancia de que el Kernel (núcleo) funciona bien. Cuando no sucede, las aplicaciones comienzan colapsar y el computador en general, empieza a hacer cosas raras. Es probable que haya tropezado con esta situación antes, incluso si usted no lo sabía en ese momento: los usuarios de Windows están familiarizados con la "pantalla azul de la muerte", mientras que los que hemos utilizado una de las varias encarnaciones de Mac OS X, probablemente hemos encontrado algunos errores de kernel muy específicos.</p>
+
+<p>Existen varios tipos de Shell, creados desde los 40, y todos ellos hacen el mismo trabajo, pero cada uno es único en lascaracterísticas que ofrece y la sintaxis que soporta.</p>
+
+<p>cd "Change Directory" Para cambiar de directorio</p>
+
+<p>ls "List of contents" Para hacer una lista del contenido</p>
+
+<p>rm "Remove Files" Para remover archivos</p>
+
+<p>Con las flechas se puede navegar por los comandos digitados</p>
+
+<p>Los comandos usuales son, por ejemplo para instalar sofwtware:</p>
+
+<pre><code>./configure
+make
+make check
+make install
+make install check
+make clean
+</code></pre>
+
+<p>Y luego debe modificar el Path, por ejemplo:</p>
+
+<pre><code>PATH=/home/&lt;USERNAME&gt;/mpich-install/bin:$PATH
+/opt/local/bin/mpicc
+source .bashrc
+</code></pre>
+
+<p>Nota: Solamente cuando sepa qué está haciendo exactamente modifique el PATH.</p>
+
+<h1>¿Qué es el PATH?</h1>
+
+<p>El ambiente de variables del PATH es una lista de directorios, separados con dos puntos (:), sobre los cuales siempre el Shell busca cuando se digita un comando en la terminal.</p>
+
+<p>Lo programas, es decir ejecutables, se alojan de diferentes maneras en el sistema Unix (MAC y Linux ). El path simplemente almacena las rutas a esas ubicaciones específicas. Entre más direcciones se agreguen al PATH menos veces saldrán errores del tipo: "Command not found". Sin embargo, estas acciones siempre se deben hacer cuidadosamente.</p>
+
+<p>Para saber dónde está el PATH, desde desde una terminal se debe digitar:</p>
+
+<pre><code>echo $PATH 
+</code></pre>
+
+<p>El path será algo así:</p>
+
+<p>/usr2/username/bin:/usr/local/bin:/usr/bin:.</p>
+
+<p>En donde se verá el nombre de la máquina. Entonces si usted, por ejemplo digita el comando ls, el shell empezará a buscar esa instrucción en el siguiente orden</p>
+
+<p>/usr2/username/bin</p>
+
+<p>luego en</p>
+
+<p>/usr/local/bin</p>
+
+<p>luego en</p>
+
+<p>/usr/bin</p>
+
+<p>y finalmente en la carpeta local, instrucción que se hace explícita en . (un punto).</p>
+
+<p>Para modificar el Path:</p>
+
+<p>Si está usando csh o tcsh, desde la terminal digite:</p>
+
+<pre><code>setenv PATH $PATH\:/dir/path
+</code></pre>
+
+<p>Si está usando sh,ksh o bash, desde la terminal digite:</p>
+
+<pre><code>PATH=$PATH\:/dir/path ; export PATH
+</code></pre>
+
+<p>En todos los casos, reemplace /dir/path con el directorio deseado para la búsqueda del comando o archivo.</p>
+
+<p>Fíjese que las entradas anteriores en el path toman precedencia sobre las posteriores. Si usted quiere que los directorios que agrega tengan precedencia, en los ejemplos de arriba, reemplace $PATH:/dir/path with /dir/path:$PATH .</p>
+
+<p>Para hacer los cambios permanentes debe modificar el archivo que es cargado por la terminal, el cual puede ser un archivo .cshrc (para csh y tcsh), archivo .profile para (sh y ksh) o .bash_profile (para bash).</p>
+
+<p>UBUNTU:</p>
+
+<pre><code>nano ~/.bashrc
+</code></pre>
+
+<p>MAC:</p>
+
+<pre><code>pico ~/.bash_profile
+</code></pre>
+
+<p>En vez de nano o pico, funciona, dependiendo del editor instalado:</p>
+
+<p>source
+pico
+vi
+nno</p>
+
+<hr />
+
+<p>Nota opcional en algunos casos:</p>
+
+<pre><code>export BASH_CONF="bash_profile"
+</code></pre>
+
+<p>Abrir otra terminal y ejecutar:
+$ echo $BASH_CONF</p>
+
+<hr />
+
+<h1>Fuentes:</h1>
+
+<p><a href="http://www.macdevcenter.com/pub/a/mac/2004/02/24/bash.html">http://www.macdevcenter.com/pub/a/mac/2004/02/24/bash.html</a>
+<a href="http://coolestguidesontheplanet.com/add-shell-path-osx/">http://coolestguidesontheplanet.com/add-shell-path-osx/</a>
+<a href="http://kb.iu.edu/data/acar.html">http://kb.iu.edu/data/acar.html</a>
+<a href="https://help.ubuntu.com/community/Beginners/BashScripting">https://help.ubuntu.com/community/Beginners/BashScripting</a></p>
+</body>
+</html>

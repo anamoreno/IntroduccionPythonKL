@@ -217,13 +217,13 @@ La ventaja añadida es que, si la instalación de Python se rompe de alguna mane
 
 <p>La distribución recomendada es Anaconda:</p>
 
-<p>https://store.continuum.io/cshop/anaconda/</p>
+<p><a href="https://store.continuum.io/cshop/anaconda/">https://store.continuum.io/cshop/anaconda/</a></p>
 
 <p>Es gratis para uso académico, NO hay que pagar por la versión.</p>
 
 <p>Al descargar Anaconda, la organización solicita un correo electrónico que no será valido. Sin embargo, sugiero utilizar datos correctos para mantenerse al día en las actualizaciones. Así que mejor descargar la versión académica (opcional):</p>
 
-<p>https://store.continuum.io/cshop/academicanaconda</p>
+<p><a href="https://store.continuum.io/cshop/academicanaconda">https://store.continuum.io/cshop/academicanaconda</a></p>
 
 <p>En el formato digite su institución educativa. Me he puesto en contacto con Continuum Analytics y han incluido el dominio @konradlorenz.edu.co</p>
 
@@ -258,11 +258,16 @@ Core i5                     64 bit
 Core i7                     64 bit</p>
 
 <p>Fuente:
-http://support.apple.com/kb/HT3696?viewlocale=en_US&amp;locale=en_US</p>
+<a href="http://support.apple.com/kb/HT3696?viewlocale=en_US&amp;locale=en_US">http://support.apple.com/kb/HT3696?viewlocale=en_US&amp;locale=en_US</a></p>
 
 <h1>Linux:</h1>
 
-<p>En una terminal digite uname -mpi Si usted ve x86_64 x86_64 x86_64 su computador es de 64-bit.</p>
+<p>En una terminal digite:</p>
+
+<pre><code>    uname -mpi 
+</code></pre>
+
+<p>Si usted ve x86_64 x86_64 x86_64 su computador es de 64-bit.</p>
 
 <p>Si ve uno o más i686 o i386 está utilizando una máquina de 32-bit</p>
 
@@ -270,7 +275,7 @@ http://support.apple.com/kb/HT3696?viewlocale=en_US&amp;locale=en_US</p>
 
 <p>Ahora sí descargue Anaconda</p>
 
-<p>http://continuum.io/downloads.html</p>
+<p><a href="http://continuum.io/downloads.html">http://continuum.io/downloads.html</a></p>
 
 <p>Una vez descargado, utilice la terminal para ir al directorio de la descarga y, asumiendo que tiene el mismo nombre el archivo descargado digite
 en la línea de comando (una terminal):</p>
@@ -285,7 +290,8 @@ en la línea de comando (una terminal):</p>
 
 <p>Desde la terminal digite:</p>
 
-<p>% bash Anaconda-2.0.0-Linux-x86_64.sh</p>
+<pre><code>bash Anaconda-2.0.0-Linux-x86_64.sh
+</code></pre>
 
 <ul>
 <li>Presione ENTER para continuar</li>
@@ -325,15 +331,17 @@ Please check out: http://continuum.io and https://binstar.org</p>
 <hr />
 
 <ul>
-<li>Paquetes adicionales de Python. Para instalarlos abra una nueva terminal y digite:</li>
+<li><p>Paquetes adicionales de Python. Para instalarlos abra una nueva terminal y digite:</p>
+
+<pre><code>  pip install &lt;nombre del paquete&gt;
+</code></pre>
+
+<p>  para actualizar un paquete digite:</p>
+
+<pre><code>  pip install --upgrade &lt;nombre del paquete&gt;
+</code></pre></li>
 </ul>
 
-
-<p>pip install <nombre del paquete></p>
-
-<p>para actualizar un paquete digite:</p>
-
-<p>pip install --upgrade <nombre del paquete></p>
 
 <p>Paquetes adicionales:</p>
 
@@ -351,7 +359,7 @@ scikit-learn</p>
 
 <p>Primero, cree una cuenta en GitHub si no tiene una <a href="http://github.com">http://github.com</a></p>
 
-<p>Segundo, instale GitHub en su computador. Las instrucciones están en el documento GitHub.pdf</p>
+<p>Segundo, instale GitHub en su computador. Las instrucciones están en el documento GitHub.html</p>
 
 <hr />
 
@@ -373,23 +381,31 @@ Recomiendo el Servidor de la Universidad Nacional: <a href="http://www.laqee.una
 <p>Linux: Para instarlos abra R y utilice la consola de R para ejecutar el siguiente comando para cada paquete:
 Por ejemplo, para instalar Hmisc:</p>
 
-<p>install.packages(repos="http://cran.r-project.org", "Hmisc")</p>
+<pre><code>install.packages(repos="http://cran.r-project.org", "Hmisc")
+</code></pre>
 
 <p>Mac: Para instalar paquetes adicionales de R abra la aplicación y selecciones el menu "Packages &amp; Data/Package Installer" menu.
 Con "CRAN (binaries)" seleccionado (por defecto) haga click en "Get List". Use el campo de búsqueda para encontrar los paquetes anteriores y haga click en el boton "instalar".</p>
 
 <hr />
 
+<h1>Software específico para Mac.</h1>
+
 <ul>
-<li><p>Software específico para Mac.</p></li>
 <li><p>Xcode. Es gratis y se obtiene directamente desde el App Store. Siga las siguientes instrucciones para realizar
 la instalación correctamente. http://www.scicoder.org/2012/03/developer-tools-on-os-x-10-7-lion/</p></li>
 <li><p>TextWranger, http://www.barebones.com/products/textwrangler/</p></li>
 <li><p>iTerm: <a href="http://iterm.sourceforge.net/downloads.shtml">http://iterm.sourceforge.net/downloads.shtml</a></p></li>
 <li><p>TeXShop: <a href="http://pages.uoregon.edu/koch/texshop/obtaining.html">http://pages.uoregon.edu/koch/texshop/obtaining.html</a></p></li>
 <li><p>XQuartz (descargue la última versión): <a href="http://xquartz.macosforge.org/landing/">http://xquartz.macosforge.org/landing/</a></p></li>
-<li><p>Software específico para Linux.</p></li>
-<li><p>Kate: <a href="http://kate-editor.org/get-it/">http://kate-editor.org/get-it/</a> (Se puede obtener desde ek Centro de Software de Ubuntu)</p></li>
+<li>Mou. Permite escribir textos planos ""ricos"" <a href="http://mouapp.com">http://mouapp.com</a></li>
+</ul>
+
+
+<h1>Software específico para Linux.</h1>
+
+<ul>
+<li>Kate: <a href="http://kate-editor.org/get-it/">http://kate-editor.org/get-it/</a> (Se puede obtener desde ek Centro de Software de Ubuntu)</li>
 </ul>
 
 

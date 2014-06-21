@@ -1,0 +1,242 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<style>
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "Helvetica Neue", Helvetica, "Hiragino Sans GB", Arial, sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    color: #737373;
+    background-color: white;
+    margin: 10px 13px 10px 13px;
+}
+table {
+	margin: 10px 0 15px 0;
+	border-collapse: collapse;
+}
+td,th {	
+	border: 1px solid #ddd;
+	padding: 3px 10px;
+}
+th {
+	padding: 5px 10px;	
+}
+
+a {
+    color: #0069d6;
+}
+a:hover {
+    color: #0050a3;
+    text-decoration: none;
+}
+a img {
+    border: none;
+}
+p {
+    margin-bottom: 9px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #404040;
+    line-height: 36px;
+}
+h1 {
+    margin-bottom: 18px;
+    font-size: 30px;
+}
+h2 {
+    font-size: 24px;
+}
+h3 {
+    font-size: 18px;
+}
+h4 {
+    font-size: 16px;
+}
+h5 {
+    font-size: 14px;
+}
+h6 {
+    font-size: 13px;
+}
+hr {
+    margin: 0 0 19px;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+}
+blockquote {
+    padding: 13px 13px 21px 15px;
+    margin-bottom: 18px;
+    font-family:georgia,serif;
+    font-style: italic;
+}
+blockquote:before {
+    content:"\201C";
+    font-size:40px;
+    margin-left:-10px;
+    font-family:georgia,serif;
+    color:#eee;
+}
+blockquote p {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 18px;
+    margin-bottom: 0;
+    font-style: italic;
+}
+code, pre {
+    font-family: Monaco, Andale Mono, Courier New, monospace;
+}
+code {
+    background-color: #fee9cc;
+    color: rgba(0, 0, 0, 0.75);
+    padding: 1px 3px;
+    font-size: 12px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+pre {
+    display: block;
+    padding: 14px;
+    margin: 0 0 18px;
+    line-height: 16px;
+    font-size: 11px;
+    border: 1px solid #d9d9d9;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+pre code {
+    background-color: #fff;
+    color:#737373;
+    font-size: 11px;
+    padding: 0;
+}
+sup {
+    font-size: 0.83em;
+    vertical-align: super;
+    line-height: 0;
+}
+* {
+	-webkit-print-color-adjust: exact;
+}
+@media screen and (min-width: 914px) {
+    body {
+        width: 854px;
+        margin:10px auto;
+    }
+}
+@media print {
+	body,code,pre code,h1,h2,h3,h4,h5,h6 {
+		color: black;
+	}
+	table, pre {
+		page-break-inside: avoid;
+	}
+}
+</style>
+<title>GitHub</title>
+<script type="text/x-mathjax-config">MathJax.Hub.Config({tex2jax:{inlineMath:[['$$$','$$$']]}});</script><script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</head>
+<body>
+<h1>GitHub</h1>
+
+<p>Por: Alejandro Cárdenas-Avendaño, Konrad Lorenz Fundación Universitaria.
+alejandro.cardenasa@konradlorenz.edu.co y Julián Jiménez</p>
+
+<p>La siguiente guía tiene como objetivo enseñarle al lector los usos básicos de GitHub, una herramienta que se usa para construir y modificar todo tipo de archivos en comunidad, es decir, donde se puede trabajar en conjunto con otras personas de su selección
+el desarrollo de archivos.</p>
+
+<h1>Sobre los repositorios:</h1>
+
+<p>Un repositorio es una especie de carpeta donde se pueden guardar archivos de todo tipo, pero, a diferencia de una carpeta normal, el repositorio permite que varias personas modifiquen un archivo
+(si estas personas tienen permiso del creador del repositorio). Los repositorios tienen una similitud con Dropbox y otros programas de alojamiento en la nube en este sentido, sólo que un repositorio permite un trabajo óptimo entre muchas personas, ya que no se dan aquellos errores de incompatibilidad que se dan en los típicos programas que almacenan en la nube cuando trabajan dos personas al mismo tiempo en el mismo archivo.</p>
+
+<p>Para crear un repositorio, debe estar en la página de inicio de GitHub. En la parte superior derecha encontrará un “+”, aquí hay varias opciones, pero por ahora usará “crear nuevo repositorio”.</p>
+
+<p>Llene toda la información en esta página. Cuando termine, haga clic en “Crear Repositorio”. Se recomienda hacer un README.md para mostrar información acerca de su repositorio.</p>
+
+<p>Para añadir archivos a su repositorio, tan sólo debe hacer clic en el “+” que está justo en frente del nombre de su repositorio. Existe una herramienta llamada “Fork”, usada para copiar y pegar un repositorio. Esto sirve para tomar las bases de un repositorio y empezar a desarrollar un proyecto desde uno ya existente. Puede hacer clic en la opción “Watch” para recibir notificaciones de sus repositorios favoritos. También puede aportar a otros repositorios con la opción de mandar solicitud, donde usted muestra los aportes que realizaría a cierto archivo de un repositorio (tenga en cuenta que esta opción sólo está activa si usted no tiene autoría en susodicho repositorio). En la sección “Issues” de cada repositorio se discuten los problemas que necesitan ser arreglados.</p>
+
+<h1>Instalación:</h1>
+
+<p>Lo primero que se debe hacer es, naturalmente, instalar GitHub.
+Dependiendo de su OS deberá seguir las instrucciones propuestas en la siguiente página git-scm.com/downloads. También puede trabajar con GitHub desde el dominio web &lt;hhtp://www.github.com>.</p>
+
+<p>Desde una terminal digitar:</p>
+
+<pre><code>sudo apt-get install git-core git-gui git-doc
+</code></pre>
+
+<h1>Nombre de Usuario:</h1>
+
+<p>Primero debe decirle a GitHub su nombre, así sus comentarios serán propiamente etiquetados. Para ello debe introducir el siguiente comando en su terminal, preferiblemente desde root</p>
+
+<pre><code>git config --global user.name "Su_nombre_aquí" 
+</code></pre>
+
+<h1>Correo Electrónico:</h1>
+
+<p>Git guarda su dirección de correo electrónico en los comentarios que hace. Ellos usan la dirección de correo electrónico para asociar sus comentarios (los del lector) con su cuenta de GitHub.
+Introduzca el siguiente comando en la terminal para ello.</p>
+
+<pre><code>git config --global user.email "su_correo@ejemplo.com"
+</code></pre>
+
+<h1>Configuración del PUSH:</h1>
+
+<pre><code>git config --global push.default simple
+</code></pre>
+
+<h1>Trabajando con GitHub:</h1>
+
+<p>Para Clonar un repositorio:</p>
+
+<p>Crear una carpeta en el sitio donde se desea ubicar la información y desde la terminal entrar a ella.</p>
+
+<p>Desde la página de GitHub entre al repositorio que desea clonar, en la parte derecha aparece la opción "HTTPS clone URL"</p>
+
+<p>Para clonar por ejemplo los archivos del curso:</p>
+
+<pre><code>git clone https://github.com/alejandroc137/IntroduccionPythonKL.git
+</code></pre>
+
+<p>El anterior comando descargará todos los archivos contenidos en el repositorio IntroduccionPythonKL</p>
+
+<p>Mantener actualizado el Repositorio:</p>
+
+<p>La clonación sólo se debe realizar una vez. Entre a la carpeta que fue descargada y digite</p>
+
+<pre><code>git pull
+</code></pre>
+
+<p>De esta manera podrá mantener actualizado el contenido del curso.</p>
+
+<p>Esto es prácticamente todo lo que necesita saber para poder usar GitHub. Tenga en cuenta que GitHub puede ser usado desde una terminal con gran libertad, pero para usted será más fácil hacerlo desde un navegador web. Hay muchas otras opciones que están implementadas en GitHub, visite la página oficial o las fuentes presentadas al final de este documento.</p>
+
+<hr />
+
+<p>FUENTES:
+<a href="http://www.vogella.com/tutorials/Git/article.html">http://www.vogella.com/tutorials/Git/article.html</a>
+<a href="http://www.cristalab.com/tutoriales/introduccion-a-github-en-linux-ubuntu-c106086l/">http://www.cristalab.com/tutoriales/introduccion-a-github-en-linux-ubuntu-c106086l/</a>
+<a href="http://www.cristalab.com/tutoriales/buenas-practicas-para-el-uso-de-git-y-github-c112872l/">http://www.cristalab.com/tutoriales/buenas-practicas-para-el-uso-de-git-y-github-c112872l/</a>
+<a href="http://quick2wire.com/articles/a-gentle-guide-to-git-and-github/">http://quick2wire.com/articles/a-gentle-guide-to-git-and-github/</a></p>
+</body>
+</html>
