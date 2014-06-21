@@ -1,0 +1,279 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<style>
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "Helvetica Neue", Helvetica, "Hiragino Sans GB", Arial, sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    color: #737373;
+    background-color: white;
+    margin: 10px 13px 10px 13px;
+}
+table {
+	margin: 10px 0 15px 0;
+	border-collapse: collapse;
+}
+td,th {	
+	border: 1px solid #ddd;
+	padding: 3px 10px;
+}
+th {
+	padding: 5px 10px;	
+}
+
+a {
+    color: #0069d6;
+}
+a:hover {
+    color: #0050a3;
+    text-decoration: none;
+}
+a img {
+    border: none;
+}
+p {
+    margin-bottom: 9px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #404040;
+    line-height: 36px;
+}
+h1 {
+    margin-bottom: 18px;
+    font-size: 30px;
+}
+h2 {
+    font-size: 24px;
+}
+h3 {
+    font-size: 18px;
+}
+h4 {
+    font-size: 16px;
+}
+h5 {
+    font-size: 14px;
+}
+h6 {
+    font-size: 13px;
+}
+hr {
+    margin: 0 0 19px;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+}
+blockquote {
+    padding: 13px 13px 21px 15px;
+    margin-bottom: 18px;
+    font-family:georgia,serif;
+    font-style: italic;
+}
+blockquote:before {
+    content:"\201C";
+    font-size:40px;
+    margin-left:-10px;
+    font-family:georgia,serif;
+    color:#eee;
+}
+blockquote p {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 18px;
+    margin-bottom: 0;
+    font-style: italic;
+}
+code, pre {
+    font-family: Monaco, Andale Mono, Courier New, monospace;
+}
+code {
+    background-color: #fee9cc;
+    color: rgba(0, 0, 0, 0.75);
+    padding: 1px 3px;
+    font-size: 12px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+pre {
+    display: block;
+    padding: 14px;
+    margin: 0 0 18px;
+    line-height: 16px;
+    font-size: 11px;
+    border: 1px solid #d9d9d9;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+pre code {
+    background-color: #fff;
+    color:#737373;
+    font-size: 11px;
+    padding: 0;
+}
+sup {
+    font-size: 0.83em;
+    vertical-align: super;
+    line-height: 0;
+}
+* {
+	-webkit-print-color-adjust: exact;
+}
+@media screen and (min-width: 914px) {
+    body {
+        width: 854px;
+        margin:10px auto;
+    }
+}
+@media print {
+	body,code,pre code,h1,h2,h3,h4,h5,h6 {
+		color: black;
+	}
+	table, pre {
+		page-break-inside: avoid;
+	}
+}
+</style>
+<title>Guía Básica de instalación de Ubuntu 14.04</title>
+<script type="text/x-mathjax-config">MathJax.Hub.Config({tex2jax:{inlineMath:[['$$$','$$$']]}});</script><script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</head>
+<body>
+<h1>Guía Básica de instalación de Ubuntu 14.04</h1>
+
+<p>Por: Alejandro Cárdenas-Avendaño, Konrad Lorenz Fundación Universitaria.
+alejandro.cardenasa@konradlorenz.edu.co</p>
+
+<ol>
+<li><p>Descargar Ubuntu <a href="http://www.ubuntu.com/download">http://www.ubuntu.com/download</a> (Aproximadamente 1GB)</p></li>
+<li><p>Crear una unidad "Booteable" o ¿inicializable?</p>
+
+<p>  Windows</p>
+
+<p> Instrucciones en:
+ <a href="http://www.ubuntu.com/download/desktop/create-a-usb-stick-on-windows">http://www.ubuntu.com/download/desktop/create-a-usb-stick-on-windows</a>
+ Se requiere:
+ <a href="http://www.pendrivelinux.com/universal-usb-installer-easy-as-1-2-3/">http://www.pendrivelinux.com/universal-usb-installer-easy-as-1-2-3/</a></p>
+
+<pre><code> 2.1 Descargar el Software (USB Installer) y seguir las instrucciones:
+     2.1.1 Seleccionar la Versión de Linux (Ubuntu)
+     2.2.2 Ubicar el archivo .iso que se descargó en (1)
+     2.2.3 Seleccionar la USB
+     2.2.4 Sugiero formatearla
+     2.2.5 Click en Create
+     2.2.6 Cerrar la aplicación 
+ 2.2 Apagar el equipo
+</code></pre>
+
+<p> Mac</p>
+
+<p> (Si usted tiene MAC no necesita instalar Linux, estas líneas las escribo por completes.Quizá en algún momento requiera crear una unidad "Booteable")</p>
+
+<p> Instrucciones en:
+ <a href="http://www.ubuntu.com/download/desktop/create-a-usb-stick-on-mac-osx">http://www.ubuntu.com/download/desktop/create-a-usb-stick-on-mac-osx</a></p>
+
+<pre><code> 2.1 Abrir un Terminal
+
+ 2.2 Convertir el .iso en .img
+
+     2.2.1 hdiutil convert -format UDRW -o /Users/USUARIO/Desktop/ubuntu.img /Users/USUARIO/Desktop/ubuntu-14.04-desktop-amd64.iso
+     2.2.2 Mac agrega una extensión .dmg al archivo. Desde el Finder se debe borrar.  
+
+ 2.3 Insertar la USB
+
+ 2.4 Ejecutar la Utilidad de Discos
+
+     2.4.1 Desmontar la Unidad
+     VARIANTE:
+     2.4.2 Desde la terminal correr el código diskutil unmountDisk /Volumes/DATA
+
+ 2.5 Ejecutar sudo dd if=/Users/USUARIO/Desktop/ubuntu.img of=/Volumes/rNOMBREDELAUSB bs=1m
+
+ 2.6 Desde la Utilidad de Discos Expulsar la Unidad
+
+ 2.7 Apagar el equipo.
+</code></pre></li>
+<li><p>Prender el equipo y arrancar desde la USB
+Siempre que un computador está prendiendo, durante los primeros segundos, aparecen mensajes propios de la máquina que indican cómo entrar al BIOS, es decir la tecla indicada. Puede ser un Esc, Tab, F8, F12... Por ejemplo:</p>
+
+<ul>
+<li>MacBook: Dejar presionada la tecla alt/option</li>
+<li>Dell: Presionar varias veces la tecla F12</li>
+<li>HP: Presionar varias veces la tecla F8</li>
+</ul>
+</li>
+<li><p>Instalar Ubuntu</p>
+
+<p> Instrucciones:</p>
+
+<p> <a href="http://www.ubuntu.com/download/desktop/install-ubuntu-desktop">http://www.ubuntu.com/download/desktop/install-ubuntu-desktop</a></p>
+
+<p> 4.1 Seleccionar el Idioma</p>
+
+<p> 4.2 Instalar Ubuntu</p>
+
+<p> 4.3 Cumplir tres requisitos básicos:</p>
+
+<pre><code> - Estar conectado a Internet. 
+ - Si es un portátil, estar conectado a una toma de corriente.
+ - Tener al menos 6.4 GB de espacio libre en Disco Duro. (Realmente recomiendo dejarla a Ubuntu más de 100GB)
+</code></pre>
+
+<p> 4.4 Sugiero Descargar las actualizaciones mientras se instala.</p>
+
+<p> 4.5 Sugiero Instalar el software de terceros.</p>
+
+<p> 4.6 Usted puede escoger si desea instalar Ubuntu junto a Microsoft...</p>
+
+<p> Depende de Usted. No tengo ninguna razón para usar Windows. Para usuarios expertos: Seleccionar "Más Opciones"</p>
+
+<p> 4.7 Asigne el espacio que desea para Ubuntu. Acá hay que tener especial cuidad, ya que es irreversible. Si usted asigna muy poco espacio y necesita más eventualmente, debe realizar estos pasos nuevamente, realizar un BackUp y asegurarse de no perder información. Esto puede ser muy tedioso, teniendo en cuenta que cada persona personaliza el computador, así que se necesitaría instalar TODO nuevamente. De manera análoga, puede que no le guste Ubuntu
+ (si es el caso me gustaría saber porqué alejandro.cardenasa@konradlorenz.edu.co) y haya asignado espacio que
+ requiera para otro sistema operativo. La nueva asignación de espacio puede tardar varios minutos.</p>
+
+<p> 4.8 Seleccionar la ubicación geográfica.</p>
+
+<p> 4.9 Seleccionar la distribución del teclado. Acá es importante reconocer realmente qué teclado tiene, para que después no sea muy terrible buscar caracteres como ^,*,[,],ñ,¬,\, etc... La opción "Detectar teclado" es bastante divertida
+ y sirve, en primera aproximación, para seleccionar adecuadamente el teclado correcto.</p>
+
+<p> 4.10 Crear un nombre para el equipo. Recomiendo utilizar algo decente, ya que se usará todo el tiempo en las líneas
+ de comando. No muy largo, no muy corto...</p>
+
+<p> 4.11 La instalación puede tardar varios minutos. Mientras tanto puede leer la guia GitHub para Dummies.</p>
+
+<p> 4.12 Una vez la instalación haya terminado correctamente, reinicie el computador. Dependiendo de la opción escogida en
+ 4.6 el inicio del computador será: Entrar directamente a Ubuntu o desplegará una lista para escoger el sistema operativo
+ a utilizar.</p>
+
+<p> 4.13 Dependiendo la configuración del computador debe retirar la USB apagado o durante el reinicio. Para que no vuelva a
+ iniciar desde la USB.</p>
+
+<p> Nota: Si por alguna razón, pueden haber muchas, la instalación no funciona. Sugiero dos cosas: a) Busque el error que ocurra en la web, me sorprendería que no hubiera información. b) Escríbame un correo con los detalles del suceso, agregando la descripción del computador, marca, sistema operativo ya instalado, tipo de instalación escogida, etc.</p></li>
+<li><p>Si está dentro del 20% de la población (la estadística es mia) que instala Ubuntu por primera vez y le funciona: Felicitaciones.
+No sé porqué pero casi siempre pasa algo, bien sea por la arquitectura del computador, la versión, un problema de compatibilidad, etc. Puede pasar que, si instaló Ubuntu quitándole espacio al otro sistema operativo ya existente, cuando intente iniciar otro sistema operativo tarde más de lo normal y deba hacer unas verificaciones de disco primero, es normal. En este caso, cada vez que prenda el computador debe escoger el sistema operativo a usar.</p></li>
+</ol>
+
+
+<h1>Consideraciones Generales:</h1>
+
+<p> Existe por lo menos otra manera de instalar un sistema operativo de manera virtual. Lo que se hace es utilizar un software que virtualiza arquitecturas para instalar un sistema operativo sobre otro, conocido como el anfitrión. En nuestro caso sirve en ambas vías; se puede virtualizar Ubuntu sobre Windows y se puede virtualizar Windows sobre Ubuntu. Aconsejo realizar este tipo de instalación para casos muy específicos y cuando el sistema operativo virtualizado se use realmente poco. Por ejemplo: Yo virtualizaba Windows desde Ubuntu para instalar juegos,utilizar SPSS (cuando no estaba para otras plataformas (ahora SPSS corre Python nativamente))
+ y los Software de JOVE y Celestron. Realmente no es aconsejable en general, ya que si no se tiene un súper computador ambos sistemas operativos funcionarán lentamente, consumiendo cada uno bastantes recursos de máquina. Hasta donde sé VirtualBox funciona bastante bien y es Software Libre. (<a href="https://www.virtualbox.org">https://www.virtualbox.org</a>)</p>
+</body>
+</html>
