@@ -1,0 +1,16 @@
+Instrucciones del material:
+
+Para utilizar el material del curso recomiendo:
+
+- Descargar todo el material:
+Al lado derecho en la página del repositorio aparecer un ícono que permite descargar todo el material
+("Download ZIP") del repositorio a su computador.
+
+- Clonar el Repositorio:
+Al lado derecho en la página del repositorio aparecer un ícono que permite Clonar ("Clone in Desktop") 
+el repositorio a su computador.
+
+Al realizar cualquiera de estas acciones puede abrir el contenido fácilmente, .HTML (Con un explorador)
+.ipynb (con una terminal)
+
+Durante el curso se explicará cómo mantener el repositorio actualizado
