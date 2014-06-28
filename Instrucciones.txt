@@ -13,4 +13,5 @@ el repositorio a su computador.
 Al realizar cualquiera de estas acciones puede abrir el contenido fácilmente, .HTML (Con un explorador)
 .ipynb (con una terminal)
 
+
 Durante el curso se explicará cómo mantener el repositorio actualizado
